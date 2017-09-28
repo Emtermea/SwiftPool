@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="rush01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vWQ-iZ-hYe">
+                                <rect key="frame" x="0.0" y="54" width="375" height="564"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NzJ-dM-dsm">
+                                <rect key="frame" x="57" y="568" width="212" height="29"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentBar:" destination="9pv-A4-QxB" eventType="valueChanged" id="yDp-6V-r8M"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnj-GF-BvY">
+                                <rect key="frame" x="285" y="567" width="65" height="30"/>
+                                <state key="normal" image="localisation"/>
+                                <connections>
+                                    <action selector="localiseButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ATE-Ex-5uS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaV-cW-H2E">
+                                <rect key="frame" x="0.0" y="16" width="97" height="30"/>
+                                <state key="normal" title="Where ?" image="search">
+                                    <color key="titleColor" red="0.011915603699999999" green="0.6142610033" blue="0.68936109290000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSearchBar:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MeU-Ij-wWg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vnj-GF-BvY" firstAttribute="leading" secondItem="NzJ-dM-dsm" secondAttribute="trailing" constant="16" id="1C6-ic-P0K"/>
+                            <constraint firstItem="vWQ-iZ-hYe" firstAttribute="top" secondItem="WaV-cW-H2E" secondAttribute="bottom" constant="8" id="4kk-TE-HUy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vnj-GF-BvY" secondAttribute="trailing" constant="9" id="Rck-gD-q6o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WaV-cW-H2E" secondAttribute="trailing" constant="262" id="cV6-C1-UZx"/>
+                            <constraint firstItem="WaV-cW-H2E" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="16" id="hb9-Yd-972"/>
+                            <constraint firstItem="vWQ-iZ-hYe" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="hmv-2Z-HRF"/>
+                            <constraint firstItem="vnj-GF-BvY" firstAttribute="centerY" secondItem="NzJ-dM-dsm" secondAttribute="centerY" id="l1C-Rm-bV9"/>
+                            <constraint firstAttribute="trailing" secondItem="vWQ-iZ-hYe" secondAttribute="trailing" id="nNz-3m-5uv"/>
+                            <constraint firstItem="WaV-cW-H2E" firstAttribute="centerX" secondItem="vnj-GF-BvY" secondAttribute="centerX" constant="-269" id="njt-Zb-YPY"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="vnj-GF-BvY" secondAttribute="bottom" constant="21" id="oNS-U5-OMN"/>
+                            <constraint firstItem="vWQ-iZ-hYe" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="p9b-4l-jYR"/>
+                            <constraint firstItem="vWQ-iZ-hYe" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="34" id="zos-KC-UlN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="paperMap" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="mapView" destination="vWQ-iZ-hYe" id="9Sd-ES-6kv"/>
+                        <outlet property="showSearchButton" destination="WaV-cW-H2E" id="IIi-0V-Num"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+        </scene>
+        <!--Go-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="rush01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1v-N0-bSq">
+                                <rect key="frame" x="167" y="107" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAm-jU-5sd">
+                                <rect key="frame" x="179" y="301" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIf-gO-VtC">
+                                <rect key="frame" x="16" y="336" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uje-GZ-Qw4">
+                                <rect key="frame" x="168" y="515" width="35" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="M8Q-bP-iD1"/>
+                                </constraints>
+                                <state key="normal" image="GoButtonResize"/>
+                                <connections>
+                                    <action selector="GoButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="SnO-8H-TW1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-xf-s3Q">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="leading" secondItem="OU2-xf-s3Q" secondAttribute="leading" id="9N8-7q-Y9L"/>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="trailing" secondItem="OU2-xf-s3Q" secondAttribute="trailing" id="Jbo-Aa-6iJ"/>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="centerX" secondItem="UAm-jU-5sd" secondAttribute="centerX" id="Kn0-QM-3vS"/>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="top" secondItem="UAm-jU-5sd" secondAttribute="bottom" constant="14" id="QOn-wF-GYw"/>
+                            <constraint firstItem="t1v-N0-bSq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="167" id="SjN-Ra-b2K"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Uje-GZ-Qw4" secondAttribute="bottom" constant="61" id="Uy3-mL-oz3"/>
+                            <constraint firstItem="OU2-xf-s3Q" firstAttribute="top" secondItem="t1v-N0-bSq" secondAttribute="bottom" constant="8" symbolic="YES" id="XGf-vI-hmA"/>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="dsa-la-mm5"/>
+                            <constraint firstAttribute="bottom" secondItem="TIf-gO-VtC" secondAttribute="bottom" constant="301" id="nMZ-se-ISd"/>
+                            <constraint firstItem="t1v-N0-bSq" firstAttribute="trailing" secondItem="Uje-GZ-Qw4" secondAttribute="trailing" id="qwJ-QA-OWP"/>
+                            <constraint firstItem="TIf-gO-VtC" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="slL-7U-WVX"/>
+                            <constraint firstItem="OU2-xf-s3Q" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="136" id="zhN-H4-shu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Go" image="search" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="fromTextField" destination="OU2-xf-s3Q" id="OPc-v4-8GZ"/>
+                        <outlet property="toTextField" destination="TIf-gO-VtC" id="uMx-wi-z6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoButtonResize" width="35" height="35"/>
+        <image name="localisation" width="30" height="30"/>
+        <image name="paperMap" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
+    </resources>
+</document>

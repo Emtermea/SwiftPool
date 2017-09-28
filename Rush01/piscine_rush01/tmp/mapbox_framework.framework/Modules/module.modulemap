@@ -1,0 +1,6 @@
+framework module mapbox_framework {
+  umbrella header "mapbox_framework.h"
+
+  export *
+  module * { export * }
+}

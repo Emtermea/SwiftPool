@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13AEF52F77AEF93577290033 /* Pods_piscine_rush01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED661546495CEE9EF90D1A0 /* Pods_piscine_rush01.framework */; };
+		1417C9701EFEA28E0059CA0D /* API_Geocode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1417C96F1EFEA28E0059CA0D /* API_Geocode.swift */; };
+		142DBF171EFFBEA400AA2959 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142DBF161EFFBEA400AA2959 /* Mapbox.framework */; };
+		142DBF181EFFBEA400AA2959 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 142DBF161EFFBEA400AA2959 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		142DBF1B1EFFBEF300AA2959 /* Mapbox.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 14B8AB7F1EFF205B002A0491 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		147DEF9B1EFFF40C00BE30BA /* API_Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DEF9A1EFFF40C00BE30BA /* API_Direction.swift */; };
+		147DEF9D1F00165200BE30BA /* gl_toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DEF9C1F00165200BE30BA /* gl_toast.swift */; };
+		147DEF9F1F003DF400BE30BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147DEF9E1F003DF400BE30BA /* TabBarController.swift */; };
+		148D6FCC1EFD3CC600DD5F00 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D6FCB1EFD3CC600DD5F00 /* TripListViewController.swift */; };
+		148D6FCE1EFD3CD600DD5F00 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D6FCD1EFD3CD600DD5F00 /* SettingsViewController.swift */; };
+		149DC5691EFD6A1400A6C2CE /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149DC5681EFD6A1400A6C2CE /* PinAnnotation.swift */; };
+		149DC56B1EFD6ABE00A6C2CE /* Location_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149DC56A1EFD6ABE00A6C2CE /* Location_User.swift */; };
+		14A395C01EFE51210072D89A /* Search_Controller_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A395BF1EFE51210072D89A /* Search_Controller_Delegate.swift */; };
+		14A395C21EFE58BF0072D89A /* Navigation_Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A395C11EFE58BF0072D89A /* Navigation_Delegate.swift */; };
+		14ACDE831EFD469E0036EACC /* Model_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ACDE821EFD469E0036EACC /* Model_Constants.swift */; };
+		14B788CB1EFD0ACB0035861F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B788CA1EFD0ACB0035861F /* AppDelegate.swift */; };
+		14B788CD1EFD0ACB0035861F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B788CC1EFD0ACB0035861F /* ViewController.swift */; };
+		14B788D01EFD0ACB0035861F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B788CE1EFD0ACB0035861F /* Main.storyboard */; };
+		14B788D31EFD0ACB0035861F /* piscine_rush01.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14B788D11EFD0ACB0035861F /* piscine_rush01.xcdatamodeld */; };
+		14B788D51EFD0ACB0035861F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B788D41EFD0ACB0035861F /* Assets.xcassets */; };
+		14B788D81EFD0ACB0035861F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B788D61EFD0ACB0035861F /* LaunchScreen.storyboard */; };
+		14B788E31EFD0ACB0035861F /* piscine_rush01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B788E21EFD0ACB0035861F /* piscine_rush01Tests.swift */; };
+		14B788EE1EFD0ACB0035861F /* piscine_rush01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B788ED1EFD0ACB0035861F /* piscine_rush01UITests.swift */; };
+		14B8ABC31EFF23AB002A0491 /* Pods_piscine_rush01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B8ABC21EFF23AB002A0491 /* Pods_piscine_rush01.framework */; };
+		14E0EDDF1EFD394500E8DACE /* 672387-geolocation-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDD91EFD394500E8DACE /* 672387-geolocation-128.png */; };
+		14E0EDE01EFD394500E8DACE /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDDA1EFD394500E8DACE /* location.png */; };
+		14E0EDE11EFD394500E8DACE /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDDB1EFD394500E8DACE /* map.png */; };
+		14E0EDE21EFD394500E8DACE /* settings2.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDDC1EFD394500E8DACE /* settings2.png */; };
+		14E0EDE31EFD394500E8DACE /* snoop copy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDDD1EFD394500E8DACE /* snoop copy.gif */; };
+		14E0EDE41EFD394500E8DACE /* UITabBarContacts_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E0EDDE1EFD394500E8DACE /* UITabBarContacts_2x.png */; };
+		14E0EDE71EFD399700E8DACE /* Location_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0EDE51EFD399700E8DACE /* Location_Cell.swift */; };
+		14E0EDE81EFD399700E8DACE /* Location_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0EDE61EFD399700E8DACE /* Location_Data.swift */; };
+		51E5E6CAB6765E122DB871B6 /* Pods_piscine_rush01UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4981B836F8B461BAD996CF99 /* Pods_piscine_rush01UITests.framework */; };
+		D9AA510D58CEB75EB08BC863 /* Pods_piscine_rush01Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E133A880C5B9C9CB8BF536 /* Pods_piscine_rush01Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14B788DF1EFD0ACB0035861F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B788BF1EFD0ACB0035861F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B788C61EFD0ACB0035861F;
+			remoteInfo = piscine_rush01;
+		};
+		14B788EA1EFD0ACB0035861F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B788BF1EFD0ACB0035861F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B788C61EFD0ACB0035861F;
+			remoteInfo = piscine_rush01;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		142DBF191EFFBEA500AA2959 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				142DBF181EFFBEA400AA2959 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		142DBF1A1EFFBEE900AA2959 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				142DBF1B1EFFBEF300AA2959 /* Mapbox.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0ED661546495CEE9EF90D1A0 /* Pods_piscine_rush01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piscine_rush01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1417C96F1EFEA28E0059CA0D /* API_Geocode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Geocode.swift; sourceTree = "<group>"; };
+		142DBF161EFFBEA400AA2959 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		147DEF9A1EFFF40C00BE30BA /* API_Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Direction.swift; sourceTree = "<group>"; };
+		147DEF9C1F00165200BE30BA /* gl_toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gl_toast.swift; sourceTree = "<group>"; };
+		147DEF9E1F003DF400BE30BA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		148D6FCB1EFD3CC600DD5F00 /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		148D6FCD1EFD3CD600DD5F00 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		149DC5681EFD6A1400A6C2CE /* PinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		149DC56A1EFD6ABE00A6C2CE /* Location_User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location_User.swift; sourceTree = "<group>"; };
+		14A395BF1EFE51210072D89A /* Search_Controller_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_Controller_Delegate.swift; sourceTree = "<group>"; };
+		14A395C11EFE58BF0072D89A /* Navigation_Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation_Delegate.swift; sourceTree = "<group>"; };
+		14ACDE821EFD469E0036EACC /* Model_Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model_Constants.swift; sourceTree = "<group>"; };
+		14B788C71EFD0ACB0035861F /* piscine_rush01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = piscine_rush01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B788CA1EFD0ACB0035861F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14B788CC1EFD0ACB0035861F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14B788CF1EFD0ACB0035861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14B788D21EFD0ACB0035861F /* piscine_rush01.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = piscine_rush01.xcdatamodel; sourceTree = "<group>"; };
+		14B788D41EFD0ACB0035861F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14B788D71EFD0ACB0035861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14B788D91EFD0ACB0035861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B788DE1EFD0ACB0035861F /* piscine_rush01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piscine_rush01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B788E21EFD0ACB0035861F /* piscine_rush01Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piscine_rush01Tests.swift; sourceTree = "<group>"; };
+		14B788E41EFD0ACB0035861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B788E91EFD0ACB0035861F /* piscine_rush01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = piscine_rush01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B788ED1EFD0ACB0035861F /* piscine_rush01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piscine_rush01UITests.swift; sourceTree = "<group>"; };
+		14B788EF1EFD0ACB0035861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B8AB7F1EFF205B002A0491 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		14B8ABC21EFF23AB002A0491 /* Pods_piscine_rush01.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_piscine_rush01.framework; path = "Pods/../build/Release-iphoneos/Pods_piscine_rush01.framework"; sourceTree = "<group>"; };
+		14E0EDD91EFD394500E8DACE /* 672387-geolocation-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "672387-geolocation-128.png"; sourceTree = "<group>"; };
+		14E0EDDA1EFD394500E8DACE /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		14E0EDDB1EFD394500E8DACE /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		14E0EDDC1EFD394500E8DACE /* settings2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings2.png; sourceTree = "<group>"; };
+		14E0EDDD1EFD394500E8DACE /* snoop copy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "snoop copy.gif"; sourceTree = "<group>"; };
+		14E0EDDE1EFD394500E8DACE /* UITabBarContacts_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UITabBarContacts_2x.png; sourceTree = "<group>"; };
+		14E0EDE51EFD399700E8DACE /* Location_Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location_Cell.swift; sourceTree = "<group>"; };
+		14E0EDE61EFD399700E8DACE /* Location_Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location_Data.swift; sourceTree = "<group>"; };
+		451A90364EF8E2F13C809B9B /* Pods-piscine_rush01UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01UITests/Pods-piscine_rush01UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4981B836F8B461BAD996CF99 /* Pods_piscine_rush01UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piscine_rush01UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E133A880C5B9C9CB8BF536 /* Pods_piscine_rush01Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_piscine_rush01Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C723A7734DB1F5B59C2BB74 /* Pods-piscine_rush01UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01UITests/Pods-piscine_rush01UITests.release.xcconfig"; sourceTree = "<group>"; };
+		9585458A9A34FE5743E5B92A /* Pods-piscine_rush01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01/Pods-piscine_rush01.debug.xcconfig"; sourceTree = "<group>"; };
+		A261E79EFFBCD0238625C394 /* Pods-piscine_rush01Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01Tests/Pods-piscine_rush01Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC02461A936D7DB43085902B /* Pods-piscine_rush01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01Tests/Pods-piscine_rush01Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF29A0C36B93C1B5CCA15F1B /* Pods-piscine_rush01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-piscine_rush01.release.xcconfig"; path = "Pods/Target Support Files/Pods-piscine_rush01/Pods-piscine_rush01.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B788C41EFD0ACB0035861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142DBF171EFFBEA400AA2959 /* Mapbox.framework in Frameworks */,
+				14B8ABC31EFF23AB002A0491 /* Pods_piscine_rush01.framework in Frameworks */,
+				13AEF52F77AEF93577290033 /* Pods_piscine_rush01.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788DB1EFD0ACB0035861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9AA510D58CEB75EB08BC863 /* Pods_piscine_rush01Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788E61EFD0ACB0035861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E5E6CAB6765E122DB871B6 /* Pods_piscine_rush01UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CDEFD457E230B42DB54B39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9585458A9A34FE5743E5B92A /* Pods-piscine_rush01.debug.xcconfig */,
+				EF29A0C36B93C1B5CCA15F1B /* Pods-piscine_rush01.release.xcconfig */,
+				AC02461A936D7DB43085902B /* Pods-piscine_rush01Tests.debug.xcconfig */,
+				A261E79EFFBCD0238625C394 /* Pods-piscine_rush01Tests.release.xcconfig */,
+				451A90364EF8E2F13C809B9B /* Pods-piscine_rush01UITests.debug.xcconfig */,
+				7C723A7734DB1F5B59C2BB74 /* Pods-piscine_rush01UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		14A395C31EFE58C60072D89A /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				14A395C11EFE58BF0072D89A /* Navigation_Delegate.swift */,
+				14A395BF1EFE51210072D89A /* Search_Controller_Delegate.swift */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
+		14B788BE1EFD0ACB0035861F = {
+			isa = PBXGroup;
+			children = (
+				14B788C91EFD0ACB0035861F /* piscine_rush01 */,
+				14B788E11EFD0ACB0035861F /* piscine_rush01Tests */,
+				14B788EC1EFD0ACB0035861F /* piscine_rush01UITests */,
+				14B788C81EFD0ACB0035861F /* Products */,
+				12CDEFD457E230B42DB54B39 /* Pods */,
+				29857A86F2A472403738A653 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14B788C81EFD0ACB0035861F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B788C71EFD0ACB0035861F /* piscine_rush01.app */,
+				14B788DE1EFD0ACB0035861F /* piscine_rush01Tests.xctest */,
+				14B788E91EFD0ACB0035861F /* piscine_rush01UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B788C91EFD0ACB0035861F /* piscine_rush01 */ = {
+			isa = PBXGroup;
+			children = (
+				14A395C31EFE58C60072D89A /* delegate */,
+				14E0EDD81EFD393700E8DACE /* images */,
+				14E0EDD71EFD124500E8DACE /* controller */,
+				14E0EDD61EFD124100E8DACE /* view */,
+				14E0EDD51EFD123C00E8DACE /* model */,
+				14B788CA1EFD0ACB0035861F /* AppDelegate.swift */,
+				14B788CE1EFD0ACB0035861F /* Main.storyboard */,
+				14B788D41EFD0ACB0035861F /* Assets.xcassets */,
+				14B788D61EFD0ACB0035861F /* LaunchScreen.storyboard */,
+				14B788D91EFD0ACB0035861F /* Info.plist */,
+				14B788D11EFD0ACB0035861F /* piscine_rush01.xcdatamodeld */,
+			);
+			path = piscine_rush01;
+			sourceTree = "<group>";
+		};
+		14B788E11EFD0ACB0035861F /* piscine_rush01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				14B788E21EFD0ACB0035861F /* piscine_rush01Tests.swift */,
+				14B788E41EFD0ACB0035861F /* Info.plist */,
+			);
+			path = piscine_rush01Tests;
+			sourceTree = "<group>";
+		};
+		14B788EC1EFD0ACB0035861F /* piscine_rush01UITests */ = {
+			isa = PBXGroup;
+			children = (
+				14B788ED1EFD0ACB0035861F /* piscine_rush01UITests.swift */,
+				14B788EF1EFD0ACB0035861F /* Info.plist */,
+			);
+			path = piscine_rush01UITests;
+			sourceTree = "<group>";
+		};
+		14E0EDD51EFD123C00E8DACE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				149DC5681EFD6A1400A6C2CE /* PinAnnotation.swift */,
+				14E0EDE51EFD399700E8DACE /* Location_Cell.swift */,
+				14E0EDE61EFD399700E8DACE /* Location_Data.swift */,
+				14ACDE821EFD469E0036EACC /* Model_Constants.swift */,
+				149DC56A1EFD6ABE00A6C2CE /* Location_User.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		14E0EDD61EFD124100E8DACE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				147DEF9C1F00165200BE30BA /* gl_toast.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		14E0EDD71EFD124500E8DACE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				14B788CC1EFD0ACB0035861F /* ViewController.swift */,
+				148D6FCB1EFD3CC600DD5F00 /* TripListViewController.swift */,
+				148D6FCD1EFD3CD600DD5F00 /* SettingsViewController.swift */,
+				147DEF9A1EFFF40C00BE30BA /* API_Direction.swift */,
+				1417C96F1EFEA28E0059CA0D /* API_Geocode.swift */,
+				147DEF9E1F003DF400BE30BA /* TabBarController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		14E0EDD81EFD393700E8DACE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				14E0EDD91EFD394500E8DACE /* 672387-geolocation-128.png */,
+				14E0EDDA1EFD394500E8DACE /* location.png */,
+				14E0EDDB1EFD394500E8DACE /* map.png */,
+				14E0EDDC1EFD394500E8DACE /* settings2.png */,
+				14E0EDDD1EFD394500E8DACE /* snoop copy.gif */,
+				14E0EDDE1EFD394500E8DACE /* UITabBarContacts_2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		29857A86F2A472403738A653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				142DBF161EFFBEA400AA2959 /* Mapbox.framework */,
+				14B8AB7F1EFF205B002A0491 /* Mapbox.framework */,
+				14B8ABC21EFF23AB002A0491 /* Pods_piscine_rush01.framework */,
+				0ED661546495CEE9EF90D1A0 /* Pods_piscine_rush01.framework */,
+				64E133A880C5B9C9CB8BF536 /* Pods_piscine_rush01Tests.framework */,
+				4981B836F8B461BAD996CF99 /* Pods_piscine_rush01UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B788C61EFD0ACB0035861F /* piscine_rush01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B788F21EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01" */;
+			buildPhases = (
+				2E9AA14212106706EE8FB2D8 /* [CP] Check Pods Manifest.lock */,
+				142DBF1A1EFFBEE900AA2959 /* Copy Files */,
+				14B788C31EFD0ACB0035861F /* Sources */,
+				14B788C41EFD0ACB0035861F /* Frameworks */,
+				14B788C51EFD0ACB0035861F /* Resources */,
+				142DBF191EFFBEA500AA2959 /* Embed Frameworks */,
+				9E3CA319DFB76A5320A5DF66 /* [CP] Copy Pods Resources */,
+				FFCC28A436F33DB5ED5E4031 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = piscine_rush01;
+			productName = piscine_rush01;
+			productReference = 14B788C71EFD0ACB0035861F /* piscine_rush01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14B788DD1EFD0ACB0035861F /* piscine_rush01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B788F51EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01Tests" */;
+			buildPhases = (
+				007FE8DEF971F1CE34531BCC /* [CP] Check Pods Manifest.lock */,
+				14B788DA1EFD0ACB0035861F /* Sources */,
+				14B788DB1EFD0ACB0035861F /* Frameworks */,
+				14B788DC1EFD0ACB0035861F /* Resources */,
+				63E2406C8CF85A3CEC740774 /* [CP] Embed Pods Frameworks */,
+				C4CAAE31FB6784EF22CF6F10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B788E01EFD0ACB0035861F /* PBXTargetDependency */,
+			);
+			name = piscine_rush01Tests;
+			productName = piscine_rush01Tests;
+			productReference = 14B788DE1EFD0ACB0035861F /* piscine_rush01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14B788E81EFD0ACB0035861F /* piscine_rush01UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B788F81EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01UITests" */;
+			buildPhases = (
+				9A7C66E247FF0E14A013A890 /* [CP] Check Pods Manifest.lock */,
+				14B788E51EFD0ACB0035861F /* Sources */,
+				14B788E61EFD0ACB0035861F /* Frameworks */,
+				14B788E71EFD0ACB0035861F /* Resources */,
+				9AFAE622D0B466D0725C9FA6 /* [CP] Embed Pods Frameworks */,
+				A1743BCF285BC93E8F1AB4D7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B788EB1EFD0ACB0035861F /* PBXTargetDependency */,
+			);
+			name = piscine_rush01UITests;
+			productName = piscine_rush01UITests;
+			productReference = 14B788E91EFD0ACB0035861F /* piscine_rush01UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B788BF1EFD0ACB0035861F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "byoung-w";
+				TargetAttributes = {
+					14B788C61EFD0ACB0035861F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5PC8C5EC35;
+						ProvisioningStyle = Automatic;
+					};
+					14B788DD1EFD0ACB0035861F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14B788C61EFD0ACB0035861F;
+					};
+					14B788E81EFD0ACB0035861F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14B788C61EFD0ACB0035861F;
+					};
+				};
+			};
+			buildConfigurationList = 14B788C21EFD0ACB0035861F /* Build configuration list for PBXProject "piscine_rush01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B788BE1EFD0ACB0035861F;
+			productRefGroup = 14B788C81EFD0ACB0035861F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B788C61EFD0ACB0035861F /* piscine_rush01 */,
+				14B788DD1EFD0ACB0035861F /* piscine_rush01Tests */,
+				14B788E81EFD0ACB0035861F /* piscine_rush01UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B788C51EFD0ACB0035861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E0EDE11EFD394500E8DACE /* map.png in Resources */,
+				14B788D81EFD0ACB0035861F /* LaunchScreen.storyboard in Resources */,
+				14B788D51EFD0ACB0035861F /* Assets.xcassets in Resources */,
+				14E0EDE01EFD394500E8DACE /* location.png in Resources */,
+				14E0EDE31EFD394500E8DACE /* snoop copy.gif in Resources */,
+				14B788D01EFD0ACB0035861F /* Main.storyboard in Resources */,
+				14E0EDDF1EFD394500E8DACE /* 672387-geolocation-128.png in Resources */,
+				14E0EDE41EFD394500E8DACE /* UITabBarContacts_2x.png in Resources */,
+				14E0EDE21EFD394500E8DACE /* settings2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788DC1EFD0ACB0035861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788E71EFD0ACB0035861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		007FE8DEF971F1CE34531BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E9AA14212106706EE8FB2D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		63E2406C8CF85A3CEC740774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01Tests/Pods-piscine_rush01Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A7C66E247FF0E14A013A890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AFAE622D0B466D0725C9FA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01UITests/Pods-piscine_rush01UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3CA319DFB76A5320A5DF66 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01/Pods-piscine_rush01-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1743BCF285BC93E8F1AB4D7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01UITests/Pods-piscine_rush01UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CAAE31FB6784EF22CF6F10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01Tests/Pods-piscine_rush01Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFCC28A436F33DB5ED5E4031 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-piscine_rush01/Pods-piscine_rush01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B788C31EFD0ACB0035861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B788CD1EFD0ACB0035861F /* ViewController.swift in Sources */,
+				147DEF9F1F003DF400BE30BA /* TabBarController.swift in Sources */,
+				14B788D31EFD0ACB0035861F /* piscine_rush01.xcdatamodeld in Sources */,
+				147DEF9B1EFFF40C00BE30BA /* API_Direction.swift in Sources */,
+				14A395C21EFE58BF0072D89A /* Navigation_Delegate.swift in Sources */,
+				148D6FCE1EFD3CD600DD5F00 /* SettingsViewController.swift in Sources */,
+				14E0EDE71EFD399700E8DACE /* Location_Cell.swift in Sources */,
+				148D6FCC1EFD3CC600DD5F00 /* TripListViewController.swift in Sources */,
+				147DEF9D1F00165200BE30BA /* gl_toast.swift in Sources */,
+				14ACDE831EFD469E0036EACC /* Model_Constants.swift in Sources */,
+				14B788CB1EFD0ACB0035861F /* AppDelegate.swift in Sources */,
+				149DC5691EFD6A1400A6C2CE /* PinAnnotation.swift in Sources */,
+				1417C9701EFEA28E0059CA0D /* API_Geocode.swift in Sources */,
+				14A395C01EFE51210072D89A /* Search_Controller_Delegate.swift in Sources */,
+				14E0EDE81EFD399700E8DACE /* Location_Data.swift in Sources */,
+				149DC56B1EFD6ABE00A6C2CE /* Location_User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788DA1EFD0ACB0035861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B788E31EFD0ACB0035861F /* piscine_rush01Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B788E51EFD0ACB0035861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B788EE1EFD0ACB0035861F /* piscine_rush01UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B788E01EFD0ACB0035861F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B788C61EFD0ACB0035861F /* piscine_rush01 */;
+			targetProxy = 14B788DF1EFD0ACB0035861F /* PBXContainerItemProxy */;
+		};
+		14B788EB1EFD0ACB0035861F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B788C61EFD0ACB0035861F /* piscine_rush01 */;
+			targetProxy = 14B788EA1EFD0ACB0035861F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14B788CE1EFD0ACB0035861F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B788CF1EFD0ACB0035861F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14B788D61EFD0ACB0035861F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B788D71EFD0ACB0035861F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B788F01EFD0ACB0035861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14B788F11EFD0ACB0035861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14B788F31EFD0ACB0035861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9585458A9A34FE5743E5B92A /* Pods-piscine_rush01.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PC8C5EC35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = piscine_rush01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @project_path/ @loader_path/Frameworks @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-d05";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		14B788F41EFD0ACB0035861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF29A0C36B93C1B5CCA15F1B /* Pods-piscine_rush01.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5PC8C5EC35;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = piscine_rush01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @project_path/ @loader_path/Frameworks @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-d05";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		14B788F61EFD0ACB0035861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC02461A936D7DB43085902B /* Pods-piscine_rush01Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = piscine_rush01Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-rush01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piscine_rush01.app/piscine_rush01";
+			};
+			name = Debug;
+		};
+		14B788F71EFD0ACB0035861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A261E79EFFBCD0238625C394 /* Pods-piscine_rush01Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = piscine_rush01Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-rush01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/piscine_rush01.app/piscine_rush01";
+			};
+			name = Release;
+		};
+		14B788F91EFD0ACB0035861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451A90364EF8E2F13C809B9B /* Pods-piscine_rush01UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = piscine_rush01UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-rush01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = piscine_rush01;
+			};
+			name = Debug;
+		};
+		14B788FA1EFD0ACB0035861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C723A7734DB1F5B59C2BB74 /* Pods-piscine_rush01UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = piscine_rush01UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "byoung-w.piscine-rush01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = piscine_rush01;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B788C21EFD0ACB0035861F /* Build configuration list for PBXProject "piscine_rush01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B788F01EFD0ACB0035861F /* Debug */,
+				14B788F11EFD0ACB0035861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B788F21EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B788F31EFD0ACB0035861F /* Debug */,
+				14B788F41EFD0ACB0035861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B788F51EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B788F61EFD0ACB0035861F /* Debug */,
+				14B788F71EFD0ACB0035861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B788F81EFD0ACB0035861F /* Build configuration list for PBXNativeTarget "piscine_rush01UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B788F91EFD0ACB0035861F /* Debug */,
+				14B788FA1EFD0ACB0035861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		14B788D11EFD0ACB0035861F /* piscine_rush01.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				14B788D21EFD0ACB0035861F /* piscine_rush01.xcdatamodel */,
+			);
+			currentVersion = 14B788D21EFD0ACB0035861F /* piscine_rush01.xcdatamodel */;
+			path = piscine_rush01.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 14B788BF1EFD0ACB0035861F /* Project object */;
+}
