@@ -19,7 +19,7 @@ class deathTableViewCell: UITableViewCell {
         didSet {
             if let d = death {
                 deathLabel?.text = d.0
-                reasonLabel?.text = d.1
+//                reasonLabel?.text = d.1
                 dateLabel?.text = d.2
             }
         }

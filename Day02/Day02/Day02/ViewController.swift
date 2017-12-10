@@ -15,8 +15,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        self.tableView.estimatedRowHeight = 90
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+//        self.tableView.estimatedRowHeight = 90
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 140
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -35,6 +36,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "deathCell", for: indexPath) as? deathTableViewCell {
             cell.death = Data.death[indexPath.row]
+            let reason = Data.death[indexPath.row]
+            cell.reasonLabel.text = reason.1
             return cell
             
         }

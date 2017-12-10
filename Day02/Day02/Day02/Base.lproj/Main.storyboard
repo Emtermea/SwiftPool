@@ -44,23 +44,23 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="reason" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-uh-N2D">
-                                                    <rect key="frame" x="0.0" y="29" width="375" height="164"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-iI-zRl">
                                                     <rect key="frame" x="191" y="7" width="175" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="reason" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-uh-N2D">
+                                                    <rect key="frame" x="0.0" y="36" width="375" height="127"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sc3-iI-zRl" firstAttribute="baseline" secondItem="obf-kC-lH4" secondAttribute="firstBaseline" id="AOE-Jt-gD6"/>
-                                                <constraint firstItem="Bir-uh-N2D" firstAttribute="top" secondItem="sQc-lD-713" secondAttribute="topMargin" constant="21" id="Bfb-dJ-gNt"/>
+                                                <constraint firstItem="Bir-uh-N2D" firstAttribute="top" secondItem="sQc-lD-713" secondAttribute="topMargin" constant="25" id="Bfb-dJ-gNt"/>
                                                 <constraint firstAttribute="topMargin" secondItem="obf-kC-lH4" secondAttribute="top" id="DW8-yv-jAt"/>
                                                 <constraint firstItem="Bir-uh-N2D" firstAttribute="leading" secondItem="sQc-lD-713" secondAttribute="leading" id="IEB-nB-txK"/>
                                                 <constraint firstItem="sc3-iI-zRl" firstAttribute="leading" secondItem="sQc-lD-713" secondAttribute="leadingMargin" constant="200" id="LXV-CV-Ktd"/>
@@ -69,7 +69,7 @@
                                                 <constraint firstItem="sc3-iI-zRl" firstAttribute="trailing" secondItem="sQc-lD-713" secondAttribute="trailingMargin" id="iMY-LR-CJh"/>
                                                 <constraint firstItem="obf-kC-lH4" firstAttribute="centerX" secondItem="sQc-lD-713" secondAttribute="centerX" constant="-89.5" id="lDz-PM-tNb"/>
                                                 <constraint firstAttribute="trailing" secondItem="Bir-uh-N2D" secondAttribute="trailing" id="mVQ-jB-QnD"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Bir-uh-N2D" secondAttribute="bottom" constant="-9" id="y91-9c-Xje"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bir-uh-N2D" secondAttribute="bottom" constant="-7" id="y91-9c-Xje"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
