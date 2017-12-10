@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     var final_result : Double!
     var current_operation : String!
     var just_equaled : Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         reset()
          display_number.text = "0"
         just_equaled = false
@@ -33,6 +33,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.displayAlert()
     }
     
     func reset()
@@ -51,16 +55,16 @@ class ViewController: UIViewController {
             right_number = 0
             just_equaled = false
         }
-        if ((num_display?.characters.count)! >= display_length_limit) {
+        if ((num_display?.count)! >= display_length_limit) {
             return
         }
         print("buttonPressed")
         if (sender.tag >= 0 && sender.tag <= 9) {
             num_display?.append("\(String(sender.tag))")
             //Number buttons
-            if num_display?.characters.first == "0" {
-                num_display?.remove(at: (num_display?.startIndex)!)
-                print("remove")
+            if num_display?.first == "0" {
+                num_display?.removeFirst()
+                print("remove first")
             }
             display_number.text = num_display
             right_number = Double(num_display!)
@@ -104,8 +108,12 @@ class ViewController: UIViewController {
         if (new_op == "=") {
             calculate()
             final_result = left_number
-            
-            display_number.text = "\(String(final_result))"
+            var tmpFinalResult = String(final_result)
+            if tmpFinalResult.suffix(2) == ".0" {
+                tmpFinalResult.removeLast(2)
+                print("remove lasts")
+            }
+            display_number.text = "\(tmpFinalResult)"
             
             let  tmp  = final_result
             reset()
@@ -141,6 +149,13 @@ class ViewController: UIViewController {
         else if(current_operation == "*") {
             left_number = left_number * right_number
         }
+    }
+    
+    func displayAlert() {
+        print ("alert")
+        let alert = UIAlertController(title: "Info Calculator App", message: "Use : UIKit\nSkills :\nTechnology integration\nObject-oriented programming\nParallel computing\nAdaptation & creativity", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
