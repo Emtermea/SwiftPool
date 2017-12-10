@@ -24,7 +24,7 @@ class AddPersonViewController: UIViewController {
         let dateFormatter = DateFormatter()
         
         dateFormatter.dateStyle = DateFormatter.Style.medium
-        dateFormatter.timeStyle = DateFormatter.Style.medium
+//        dateFormatter.timeStyle = DateFormatter.Style.medium
         let strDate = dateFormatter.string(from: timeDate.date)
         if (!(nameField.text?.isEmpty)! && !(nameField.text?.isEmpty)!){
             Data.death.append((nameField.text!, descriptionField.text!, strDate))
@@ -48,6 +48,7 @@ class AddPersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.timeDate.minimumDate = Date()
+        self.timeDate.datePickerMode = UIDatePickerMode.date
         // Do any additional setup after loading the view.
     }
 
