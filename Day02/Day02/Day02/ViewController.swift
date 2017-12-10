@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
+    var launchedBefore = false
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
@@ -26,6 +27,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if !launchedBefore {
+            self.displayAlert()
+        }
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,8 +55,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBAction func unwind_add_person( segue: UIStoryboardSegue)
     {
+        launchedBefore = true
         self.tableView.reloadData()
+        
+    }
     
+    func displayAlert() {
+        print ("alert")
+        let alert = UIAlertController(title: "Info DeathNote App", message: "Use :\nUIKit\nFoundation\nSkills :\nParallel computing\nTechnology integration\nObject-oriented programming\nAdaptation & creativity", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
